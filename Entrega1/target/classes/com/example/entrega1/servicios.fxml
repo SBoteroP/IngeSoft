@@ -15,7 +15,7 @@
             <TableColumn fx:id="costo" prefWidth="122.0" text="Costo Inicial" />
         </columns>
       </TableView>
-      <Button fx:id="serviciosButton" layoutX="68.0" layoutY="56.0" mnemonicParsing="false" text="Ver Servicios Disponibles" />
+      <Button fx:id="serviciosButton" layoutX="68.0" layoutY="56.0" mnemonicParsing="false" onAction="#verServicios" text="Ver Servicios Disponibles" />
       <TextField layoutX="249.0" layoutY="56.0" prefHeight="25.0" prefWidth="243.0" promptText="Buscar . . ." />
    </children>
 </AnchorPane>

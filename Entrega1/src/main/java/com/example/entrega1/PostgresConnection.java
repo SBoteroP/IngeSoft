@@ -43,7 +43,7 @@ public class PostgresConnection {
 
     public List<Service> getServices() throws SQLException {
         List<Service> services = new ArrayList<>();
-        String sql = "SELECT nombre_servicio, costo, proveedor_servicio FROM servicios";
+        String sql = "SELECT nombre_servicio, costo, proveedor_servicio FROM services";
         PreparedStatement stmt = conn.prepareStatement(sql);
         ResultSet rs = stmt.executeQuery();
         while (rs.next()) {

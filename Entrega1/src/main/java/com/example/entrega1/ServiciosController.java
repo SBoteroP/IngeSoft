@@ -42,7 +42,7 @@ public class ServiciosController implements Initializable {
     @FXML
     void verServicios() {
         try {
-            List<Service> servicios = connection.getServicios();
+            List<Service> servicios = connection.getServices();
             tableID.getItems().setAll(servicios);
         } catch (SQLException e) {
             e.printStackTrace();
