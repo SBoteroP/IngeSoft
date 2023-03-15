@@ -34,11 +34,10 @@ public class LoginController {
     @FXML
     private Button signupButton;
 
-    private PostgresConnection conn;
+    private DAO conn;
 
     public LoginController() throws SQLException {
-        // Replace the arguments with your own database connection details
-        conn = new PostgresConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "khanonline7");
+        conn = new DAO("jdbc:postgresql://localhost:5432/postgres", "postgres", "khanonline7");
     }
 
     @FXML

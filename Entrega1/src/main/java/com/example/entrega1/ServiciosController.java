@@ -24,12 +24,12 @@ public class ServiciosController implements Initializable {
     @FXML
     private TableColumn<Service, Double> costo;
 
-    private PostgresConnection connection;
+    private DAO connection;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         try {
-            connection =  new PostgresConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "khanonline7");
+            connection =  new DAO("jdbc:postgresql://localhost:5432/postgres", "postgres", "khanonline7");
         } catch (SQLException e) {
             e.printStackTrace();
         }
