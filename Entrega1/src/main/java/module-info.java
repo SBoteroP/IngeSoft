@@ -5,4 +5,6 @@ module com.example.entrega1 {
 
     opens com.example.entrega1 to javafx.fxml;
     exports com.example.entrega1;
+    exports Controller;
+    opens Controller to javafx.fxml;
 }
